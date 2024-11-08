@@ -99,6 +99,7 @@ nav{
         transform: translateX(0);
     }
 }
+
 .mobile-menu.active .line1{
     transform: rotate(-45deg) translate(-8px, 8px);
 }
@@ -125,13 +126,16 @@ main{
 }
 .reviews-carousel{
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .reviews{
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
 .review-card{
     background: #ffffff;
@@ -142,6 +146,7 @@ main{
     flex: 1;
     min-width: 250px;
     scroll-snap-align: start;
+    max-width: 300px;
 }
 .user-info{
     display: flex;
@@ -163,6 +168,14 @@ main{
 }
 .stars{
     color: #FFD700;
+}
+
+.users-stars{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px;
 }
 .rating-summary{
     font-size: 24px;
