@@ -27,6 +27,7 @@ function exibirProdutos(produtos) {
     const linha = document.createElement('div');
     linha.classList.add("fileira");
     containerPequeno.appendChild(linha);
+
     for (let i = 0; i < 4 && i < produtos.length; i++) {
         const produto = produtos[i];
 
@@ -54,6 +55,7 @@ function exibirProdutos(produtos) {
         coluna.appendChild(divImagem);
         coluna.appendChild(link);
     }
+
     for (let i = 0; i < produtos.length; i++) {
         const produto = produtos[i];
         
@@ -93,19 +95,19 @@ function exibirProdutos(produtos) {
         const lista = document.createElement('ul');
 
         const itemLeite = document.createElement('li');
-        itemLeite.innerText = "Leite: ${produto.Leite}";
+        itemLeite.innerText = `Leite: ${produto.Leite}`;
 
         const itemClassificacao = document.createElement('li');
-        itemClassificacao.innerText = "Classificação: ${produto.Classificacao}";
+        itemClassificacao.innerText = `Classificação: ${produto.Classificacao}`;
 
         const itemOrigem = document.createElement('li');
-        itemOrigem.innerText = "Origem: ${produto.Origem}";
+        itemOrigem.innerText = `Origem: ${produto.Origem}`;
 
         const itemProdutor = document.createElement('li');
-        itemProdutor.innerText = "Produtor: ${produto.Produtor}";
+        itemProdutor.innerText = `Produtor: ${produto.Produtor}`;
 
         const itemTecnologia = document.createElement('li');
-        itemTecnologia.innerText = "Tecnologia: ${produto.Tecnologia}";
+        itemTecnologia.innerText = `Tecnologia: ${produto.Tecnologia}`;
 
         lista.appendChild(itemLeite);
         lista.appendChild(itemClassificacao);
@@ -128,4 +130,5 @@ function exibirProdutos(produtos) {
         secao.appendChild(artigo);
     }
 }
+
 carregarProdutos();
