@@ -292,3 +292,61 @@ footer{
     margin: 0;
     text-align: center;
 }
+
+.eventos {
+    background-color: #292929;
+    padding: 40px 20px;
+}
+
+.eventos h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.eventos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.evento {
+    background-color: #163352;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.evento img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.evento h2 {
+    color: #E9AC34;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.evento p {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .eventos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .evento {
+        width: 100%;
+    }
+}
